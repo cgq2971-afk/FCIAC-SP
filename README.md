@@ -15,7 +15,7 @@ https://www.modelscope.cn/datasets/pp199124903/NSynth-100/summary
 ```bash
 pip install -r requirements.txt
 ```
-Training
+run experiment
 ```
 python train.py -project stdu -dataroot DATAROOT -dataset librispeech -config ./configs/stdu_LS-100_FCIAC -gpu 0
 python train.py -project stdu -dataroot DATAROOT -dataset nsynth-100 -config ./configs/stdu_nsynth100_FCIAC.yml -gpu 0
