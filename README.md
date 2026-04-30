@@ -9,3 +9,17 @@ https://www.modelscope.cn/datasets/pp199124903/LS-100/summary
 https://www.modelscope.cn/datasets/pp199124903/FSC-89/summary
 
 https://www.modelscope.cn/datasets/pp199124903/NSynth-100/summary
+
+## Code
+
+```bash
+pip install -r requirements.txt
+```
+Training
+```
+python train.py -project stdu -dataroot DATAROOT -dataset librispeech -config ./configs/stdu_LS-100_FCIAC -gpu 0
+python train.py -project stdu -dataroot DATAROOT -dataset nsynth-100 -config ./configs/stdu_nsynth100_FCIAC.yml -gpu 0
+python train.py -project stdu -dataroot DATAROOT -dataset FMC -config ./configs/stdu_fmc89_FCIAC.yml -gpu 0
+```
+##Contact
+Yanxiong Li (eeyxli@scut.edu.cn) and Guoqing Chen (202421012439@scut.edu.cn) School of Electronic and Information Engineering, South China University of Technology, Guangzhou, China
